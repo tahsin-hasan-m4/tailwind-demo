@@ -1,3 +1,3 @@
 # tailwind-demo
 
-This is for mrtafour ui demo using Tailwind
+This is for mrtafour UI demo using Tailwind
