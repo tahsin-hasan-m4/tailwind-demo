@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-demo",
+  "version": "1.0.0",
+  "description": "This is for metafour UI demo using Tailwind for",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@office:tahsin-hasan-m4/tailwind-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.5.4"
+  }
+}
