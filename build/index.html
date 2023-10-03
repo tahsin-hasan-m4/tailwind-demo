@@ -27,7 +27,7 @@
         </div>
     </nav>
 
-    <div class="min-h-screen py-20"  style="background-image: linear-gradient(115deg, #e0f2f7, #fafafa)">
+    <div class="min-h-screen py-20"  style="background-image: linear-gradient(115deg, #97bcb2, #fafafa)">
         <div class="container mx-auto">
           <div class="flex flex-col lg:w-11/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden items-start">
             <div class="w-full bg-blue-600 text-white py-2 px-12">
@@ -40,15 +40,18 @@
                     <label class="block tracking-wide text-gray-700 mb-2" for="grid-first-name">
                       Full Name
                     </label>
-                    <input class="appearance-none block w-fit text-gray-700 border py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full name">
+                    <input class="appearance-none block w-fit md:w-fit text-gray-700 border py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full name">
                   </div>
-                <div class="w-full md:w-1/2 px-3">
-                    <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">
-                      Product
-                    </label>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">Product</label>
+                    <select id="country" name="country"" class="block w-fit md:w-fit rounded-md border py-2 px-4 mb-4 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-200 focus:outline-none focus:bg-white">                      
+                      <option></option>
+                      <option>Same day</option>
+                      <option>Overnight</option>
+                    </select>
                     <!-- <input class="appearance-none block w-fit text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe"> -->
-                </div>
-                </div>
+                  </div>
+                </div>                
                 <div class="flex flex-wrap mx-3 ">
                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block tracking-wide text-gray-700 mb-2" for="grid-first-name">
@@ -62,6 +65,7 @@
                     </label>
                     <input class="appearance-none block w-fit text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Display records upto">
                   </div>
+                  
                 </div>  
                 
                 <div class="flex flex-wrap mx-3 ">
@@ -72,9 +76,18 @@
                     <input class="appearance-none block w-fit text-gray-700 border py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="password" placeholder="Passowrd">
                   </div>
                   <div class="w-full md:w-1/2 px-3">
-                    <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">
-                      
-                    </label>
+                    <div class="flex h-6 items-center">
+                      <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">
+                        <input id="comments" name="comments" type="checkbox" class="h-3 w-3 mt-3 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        Turn on auto complete in booking screen
+                      </label>
+                    </div>
+                    <div class="flex h-6 items-center">
+                      <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">
+                        <input id="comments" name="comments" type="checkbox" class="h-3 w-3 mt-3 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        Novice user
+                      </label>
+                    </div>
                     <!-- <input class="appearance-none block w-fit text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe"> -->
                   </div>
                 </div>  
@@ -87,18 +100,30 @@
                     <input class="appearance-none block w-fit text-gray-700 border py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Mobile phone number">
                   </div>
                   <div class="w-full md:w-1/2 px-3">
-                    <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">
-                      Language
-                    </label>
-                    <input class="appearance-none block w-fit text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                    <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">Language</label>
+                    <select id="country" name="country" class="block w-fit md:w-fit rounded-md border py-2 px-4 mb-4 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-200 focus:outline-none focus:bg-white">                      
+                      <option></option>
+                      <option>Default</option>
+                      <option>Bengali</option>
+                    </select>
                   </div>
                 </div> 
-                <div class="flex flex-wrap mx-3 ">
+                <div class="flex flex-wrap mx-3 mb-2">
                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block tracking-wide text-gray-700 mb-2" for="grid-first-name">
-                      User type
-                    </label>
-                    <!-- <input class="appearance-none block w-fit text-gray-700 border py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="User name"> -->
+                    <label class="block tracking-wide text-gray-700 mb-2" for="grid-last-name">User type</label>
+                    <div class="flex items-center gap-x-3">
+                      <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                      <label for="push-everything" class="block text-sm text-gray-700">Standard</label>
+                    </div>
+                    <div class="flex items-center gap-x-3">
+                      <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                      <label for="push-everything" class="block text-sm text-gray-700">Handheld</label>
+                    </div>
+                    <div class="flex items-center gap-x-3">
+                      <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                      <label for="push-everything" class="block text-sm text-gray-700">Both standard & handheld</label>
+                    </div>
+                    <!-- < class="appearance-none block w-fit text-gray-700 border py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="User name"> -->
                   </div>
                 </div> 
                 <div class="flex flex-wrap mx-3 ">
@@ -129,13 +154,19 @@
                   <thead>
                     <tr>
                       <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                        Name
+                        Assigned to
                       </th>
                       <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                        Age
+                        Status
                       </th>
                       <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                        Email
+                        Deadline
+                      </th>
+                      <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                        Task type
+                      </th>
+                      <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                        Task
                       </th>
                       <th class="px-6 py-3 bg-gray-50"></th> <!-- Empty header for the delete column -->
                     </tr>
@@ -143,13 +174,19 @@
                   <tbody class="bg-white divide-y divide-gray-200">
                     <tr>
                       <td class="px-6 py-4 whitespace-no-wrap">
-                        John Doe
+                        Mushfiq
                       </td>
                       <td class="px-6 py-4 whitespace-no-wrap">
-                        30
+                        New
                       </td>
                       <td class="px-6 py-4 whitespace-no-wrap">
-                        john.doe@example.com
+                        27-Jul-2022 at 17:42
+                      </td>
+                      <td class="px-6 py-4 whitespace-no-wrap">
+                        Call
+                      </td>
+                      <td class="px-6 py-4 whitespace-no-wrap">
+                        MBP -task
                       </td>
                       <td class="px-6 py-4 whitespace-no-wrap">
                         <button class="text-red-600 hover:text-red-900">
@@ -162,24 +199,29 @@
                     </tr>
                     <tr>
                       <td class="px-6 py-4 whitespace-no-wrap">
-                        Jane Smith
+                        Mamun
                       </td>
                       <td class="px-6 py-4 whitespace-no-wrap">
-                        28
+                        New
                       </td>
                       <td class="px-6 py-4 whitespace-no-wrap">
-                        jane.smith@example.com
+                        28-Jul-2022 at 17:42
+                      </td>
+                      <td class="px-6 py-4 whitespace-no-wrap">
+                        Delivery
+                      </td>
+                      <td class="px-6 py-4 whitespace-no-wrap">
+                        MBP -task
                       </td>
                       <td class="px-6 py-4 whitespace-no-wrap">
                         <button class="text-red-600 hover:text-red-900">
-                          <!-- Delete icon -->
+                          <!-- Delete icon (you can use an actual icon library here) -->
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                           </svg>
                         </button>
                       </td>
                     </tr>
-                    <!-- Add more rows as needed -->
                   </tbody>
                 </table>
               
